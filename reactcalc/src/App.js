@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import logo from './assets/chess.svg';
+import React from 'react';
+import Calculator from './Calc'
+import logo from './assets/calc.svg';
 import './css/App.css';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
@@ -11,8 +12,11 @@ class App extends Component {
           <h2>This is Theo's first stab at Web dev</h2>
         </div>
         <p className="App-intro">
-          Here's a shitty game of chess:
+          Here's a shity calculator:
         </p>
+        <div class = "calcDiv">
+        <Calculator className = 'C'></Calculator>
+        </div>
       </div>
     );
   }

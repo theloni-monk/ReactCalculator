@@ -1,14 +1,18 @@
 .App {
   text-align: center;
 }
-
+.calcDiv {
+  position: 'absolute';
+  align-self: 'center';
+  bottom: '-5%';
+}
 .App-logo {
   animation: App-logo-spin infinite 18s linear;
   height: 80px;
 }
 
 .App-header {
-  background-color: rgb(41, 134, 151);
+  background-color: rgb(121, 76, 33);
   height: 150px;
   padding: 20px;
   color: white;
