@@ -16,6 +16,7 @@ class App extends React.Component {
         </p>
         <div class = "calcDiv">
         <Calculator className = 'C'></Calculator>
+        i hate css so much
         </div>
       </div>
     );

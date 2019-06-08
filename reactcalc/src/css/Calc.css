@@ -1,18 +1,20 @@
 
 .calcContainer{
     width: 25ex;
-    height: auto;
+    height: 35ex;
     border: 10px solid rgb(87, 51, 55);
     border-radius: 25px;
     padding: 5px;
     margin: 5px;
     background-color: #8B575C;
     text-align: center;
-    
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size:  1.5em;
+    display: grid;
 }
 .equationWindow{
-    height: 10%;
-    background-color: #F6E4F6;
+    background-color: rgb(243, 252, 248);
     border-radius: 5px;
     border: 8px solid rgb(82, 77, 73);
     padding: 5px;
@@ -21,7 +23,6 @@
     text-align: left;
 }
 .currNumWindow{
-    height: 10%;
     background-color: #F4F4F4;
     border-radius: 5px;
     border: 8px solid rgb(70, 66, 63);
@@ -29,26 +30,42 @@
     margin: 5px;
     margin-top:3px;
     margin-bottom: 10px;
-
 }
 .table{
+    display: grid;
+    align-items: stretch;
     position: relative;
-    font-size:  2em;
-    font-family: Verdana, sans-serif;
-    font-weight: 400;
+    height: auto;
+    justify-content: stretch;	
+    border-style: button;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 .numeral{
-    padding-inline: 10px;
-    padding-block: 7px;
+    display: table-cell;
     background-color: #F6BDD1;
     border-radius: 5px;
     position: relative;
+    margin: 5px;
+    border-style: solid;
+}
+.numeral:hover{
+    box-shadow: 4px 4px rgb(182, 142, 156);
 }
 .operator{
+    display: grid;
     background-color: #C98986;
-    box-shadow: 5px rgb(180, 119, 116);
     border-radius: 5px;
     position: relative;
+    margin: 5px;
+    border-style: button;
+}
+.operator:hover{
+    box-shadow: 4px 4px rgb(139, 89, 87);
 }
 .operator#eq {
     background-color: rgb(108, 180, 14);
@@ -57,4 +74,7 @@
     padding-right: 5%;
     align-self: right;
     margin-bottom: 10px;
+}
+.operator#eq:hover{
+    box-shadow: 4px 4px rgb(70, 117, 9);
 }

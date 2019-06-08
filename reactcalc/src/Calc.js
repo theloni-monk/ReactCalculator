@@ -24,7 +24,7 @@ class CalcOp extends React.Component{
     render(){
         return (
             //this just kinda works
-            <button class = 'operator' id = {typeof(this.props.oid) === "undefined" ? this.props.id : this.state.name} onClick = {()=>this.props.callback(this.state.name)}> {this.state.rendername} </button> // not sure if you can pass args in the functional dec
+            <span class = 'operator' id = {typeof(this.props.oid) === "undefined" ? this.props.id : this.state.name} onClick = {()=>this.props.callback(this.state.name)}> {this.state.rendername} </span> // not sure if you can pass args in the functional dec
         );
     }
 }
@@ -40,7 +40,7 @@ class CalcNum extends React.Component{
     }
     render(){
         return(
-            <button class = 'numeral' id = {this.state.num} onClick = {()=>this.props.callback(this.state.num)}> {this.state.num} </button>
+            <span class = 'numeral' id = {this.state.num} onClick = {()=>this.props.callback(this.state.num)}> {this.state.num} </span>
         );
     }
 }
@@ -104,8 +104,8 @@ class Calculator extends React.Component{
 
             default: // for /,x,-,+
                 var eq;
-                if(haveCleared){var eq = this.state.currNum + opName;}
-                else{var eq = this.state.equation + this.state.currNum + opName;}
+                if(haveCleared){ eq = this.state.currNum + opName;}
+                else{ eq = this.state.equation + this.state.currNum + opName;}
                 this.setState({
                     equation: eq,
                     currNum: '',

@@ -2,8 +2,9 @@
   text-align: center;
 }
 .calcDiv {
+  display: grid;
+  justify-content: center;
   position: 'absolute';
-  align-self: 'center';
   bottom: '-5%';
 }
 .App-logo {
